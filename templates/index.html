@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate AI - Valuation Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-icon">🏢</div>
+            <h1>RealEstate AI</h1>
+            <p>Intelligent Property Valuation Engine</p>
+        </div>
+        
+        <form id="prediction-form">
+            <div class="input-group">
+                <label>Median Income (in $10k)</label>
+                <input type="number" step="any" id="MedInc" required placeholder="e.g. 8.32">
+            </div>
+            
+            <div class="input-group">
+                <label>House Age (Years)</label>
+                <input type="number" step="any" id="HouseAge" required placeholder="e.g. 41">
+            </div>
+            
+            <div class="input-group">
+                <label>Average Rooms</label>
+                <input type="number" step="any" id="AveRooms" required placeholder="e.g. 6.9">
+            </div>
+            
+            <div class="input-group">
+                <label>Average Bedrooms</label>
+                <input type="number" step="any" id="AveBedrms" required placeholder="e.g. 1.02">
+            </div>
+            
+            <div class="input-group">
+                <label>Population in Area</label>
+                <input type="number" step="any" id="Population" required placeholder="e.g. 322">
+            </div>
+
+            <button type="submit">Calculate Valuation</button>
+        </form>
+
+        <div id="result-box" class="hidden">
+            <p class="result-label">Estimated Property Value</p>
+            <h2 id="price-output"></h2>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
