@@ -29,16 +29,4 @@ Since the trained Machine Learning model (`model.pkl`) is too large for GitHub, 
 git clone [https://github.com/nareshyadav1234/RealEstate-AI-Valuation.git](https://github.com/nareshyadav1234/RealEstate-AI-Valuation.git)
 cd RealEstate-AI-Valuation
 
-RealEstate-AI-Valuation/
-│
-├── model.py               
-├── app.py                 
-├── Eda.ipynb              
-├── requirements.txt
-├── templates/
-│   └── index.html      
-│
-└── static/
-    ├── style.css          
-    └── script.js
 
